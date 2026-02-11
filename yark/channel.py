@@ -223,7 +223,9 @@ class Channel:
             # Concurrent fragment downloading for increased resilience (#109 <https://github.com/Owez/yark/issues/109>)
             "concurrent_fragment_downloads": 8,
             # First download "flat", then extract_info for each video, to support large channels/playlists (#71 <https://github.com/Owez/yark/issues/71>)
-            "extract_flat":True
+            "extract_flat":True,
+            # Bot Error
+            "extractor-args":  "youtube:player_client=default,web_safari;player_js_version=actual"
         }
 
         # Get response and snip it
